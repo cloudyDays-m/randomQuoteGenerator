@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cinzel:wght@400..900&family=Raleway:ital,wght@0,686;1,686&family=Viaoda+Libre&display=swap');
+
+body {
+    font-family: "Cinzel", serif;
+  font-weight: 400; 
+  font-style: normal;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background: transparent;
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+.container {
+
+  position:fixed;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  padding: 2rem;
+  
+}
+
+.quote-container {
+  font-size: 2rem;
+  font-weight: 600;
+  color: rgb(74, 64, 64);
+  margin-bottom: 2rem;
+  letter-spacing: 0.5px;
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  z-index: 1;
+}
+
+.quote-text.fade-out {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.quote-text.fade-in {
+
+  opacity: 1;
+  transform: translateY(0)
+}
+
+.quote-author {
+  font-size: 1.2rem;
+  color: rgb(74, 64, 64);
+  font-size: italic;
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.1s;
+  position: relative;
+  z-index: 1;
+  
+}
+
+.quote-author.fade-out {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.quote-author.fade-in {
+
+  opacity: 1;
+  transform: translateY(0)
+}
+
+
+.quote-author::before {
+  content: '— ';
+  color: rgba(255,255,255,0.6);
+}
+
+.new-quote-button {
+  margin-top: 3rem;
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+  cursor:pointer;
+  transition: all 0.3s ease;
+  font-family: inherit;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.new-quote-button::before {
+
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  transition: left 0.3s;
+  z-index: -1;
+
+}
+
+.new-quote-button:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+
+}
+
