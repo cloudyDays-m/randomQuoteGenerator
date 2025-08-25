@@ -1,6 +1,6 @@
 # Random Quote Generator 
 
-A simple quote generator with smooth transitions, and an animated background designed to give you that daily boost of motivation needed to achieve your goals. Made using HTML, CSS and JS, My aim was to make a simple asthetic website with an animated background to motivative people to do their best everyday. 
+A simple quote generator with smooth transitions, and an animated background designed to give you that daily boost of motivation needed to achieve your goals. Made using HTML, CSS and JS, My aim was to make a simple asthetic website with an animated background to motivative people to do their best everyday. The most trickiest part about this project for me was getting the transitions for the texts just right, which required experimenting with different easing functions and durations. This inturn, proved to be a valuable learning experiance! 
 
 link to view the project: https://cloudydays-m.github.io/randomQuoteGenerator/
 
